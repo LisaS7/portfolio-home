@@ -5,14 +5,14 @@ cd ~
 # Update config files if they have been sent to server
 # Nginx config
 if [[ -f ~/nginx.conf ]] ; then 
-    sudo mv ~/nginx.conf ~/etc/nginx/nginx.conf
+    sudo mv ~/nginx.conf /etc/nginx/nginx.conf
     sudo systemctl restart nginx
 else
     echo "No nginx.conf updates"
 fi
 # Node planner app
 if [[ -f ~/node_planner.service ]] ; then 
-    mv ~/node_planner.service ~/etc/systemd/system
+    mv ~/node_planner.service /etc/systemd/system
     sudo systemctl daemon-reload
 else
     echo "No node_planner.service updates"
