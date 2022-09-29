@@ -24,7 +24,7 @@ fi
 # Clone and install website
 read -p "Update index website? y/n: " answer
 if [[ $answer = y ]] ; then
-    rm -rf ~/portfolio-home
+    sudo rm -rf ~/portfolio-home
     git clone https://github.com/LisaS7/portfolio-home.git
     echo "Cloned portfolio-home from github"
 fi
