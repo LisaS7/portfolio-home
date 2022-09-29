@@ -22,7 +22,7 @@ fi
 
 
 # Clone and install website
-read -p "Update index website? y/n: " $answer
+read -p "Update index website? y/n: " answer
 if [[ $answer = y ]] ; then
     rm -rf ~/portfolio-home
     git clone https://github.com/LisaS7/portfolio-home.git
@@ -30,7 +30,7 @@ if [[ $answer = y ]] ; then
 fi
 
 # Clone and install node app
-read -p "Update node planner app? y/n: " $answer
+read -p "Update node planner app? y/n: " answer
 if [[ $answer = y ]] ; then
     rm -rf ~/node-planner
     git clone https://github.com/LisaS7/node-planner.git
