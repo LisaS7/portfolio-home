@@ -7,21 +7,31 @@ cd ~
 if [[ -f ~/nginx.conf ]] ; then 
     sudo mv ~/nginx.conf /etc/nginx/nginx.conf
     sudo systemctl restart nginx
-    echo "Updated nginx.conf"
+    echo "nginx.conf: updated"
 else
-    echo "No nginx.conf updates"
+    echo "nginx.conf: no updates"
 fi
+
+echo "systemd service file updates:"
 # Node planner app
 if [[ -f ~/node_planner.service ]] ; then 
     sudo mv ~/node_planner.service /etc/systemd/system
-    sudo systemctl daemon-reload
-    echo "Updated node_planner.service"
+    echo "    node_planner: updated"
 else
-    echo "No node_planner.service updates"
+    echo "    node_planner: no updates"
+fi
+# Star wars planets app
+if [[ -f ~/star-wars-planets.service ]] ; then 
+    sudo mv ~/star-wars-planets.service /etc/systemd/system
+    echo "    star-wars-planets: updated"
+else
+    echo "    star-wars-planets: no updates"
 fi
 
+sudo systemctl daemon-reload
 
-# Clone and install website
+
+# Clone and install main website
 read -p "Update index website? y/n: " answer
 if [[ $answer = y ]] ; then
     sudo rm -rf ~/portfolio-home
@@ -29,7 +39,7 @@ if [[ $answer = y ]] ; then
     echo "Cloned portfolio-home from github"
 fi
 
-# Clone and install node app
+# Clone and install node weekly planner app
 read -p "Update node planner app? y/n: " answer
 if [[ $answer = y ]] ; then
     rm -rf ~/node-planner
@@ -41,11 +51,32 @@ if [[ $answer = y ]] ; then
     # Reload systemctl service
     sudo systemctl restart node_planner.service
     sudo systemctl enable node_planner.service
-    echo "Service restarted"
+    echo "node planner service restarted"
+
+    cd ~
+fi
+
+# Clone and install star wars planets app
+read -p "Update star wars planets app? y/n: " answer
+if [[ $answer = y ]] ; then
+    rm -rf ~/star-wars-planets
+    git clone https://github.com/LisaS7/star-wars-planets.git
+    echo "Cloned star wars planets from github"
+    cd ~/star-wars-planets
+
+    bash setup.sh
+    export FLASK_APP=~/star-wars-planets/app.py
+
+
+    # Reload systemctl service
+    sudo systemctl restart star-wars-planets.service
+    sudo systemctl enable star-wars-planets.service
+    echo "star wars planets service restarted"
 
     cd ~
 fi
 
 # Checks
 systemctl status node_planner.service
+systemctl status star-wars-planets.service
 systemctl status nginx
