@@ -16,6 +16,10 @@ body {
   margin: 0;
 }
 
+.m3 {
+  margin: 3rem;
+}
+
 .container {
   margin: 1rem;
   text-align: center;
@@ -57,4 +61,9 @@ nav li.active {
 
 nav li:hover {
   background-color: var(--secondary);
+}
+
+.badge {
+  width: 150px;
+  height: 150px;
 }
