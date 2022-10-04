@@ -30,6 +30,9 @@ body {
 /* HOME */
 .home-container {
   flex-direction: column;
+  margin: auto;
+  width: 75%;
+  text-align: justify;
 }
 
 .home-container img {
