@@ -1,13 +1,14 @@
 import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="flex">
+    <nav>
       <Link to="/" className="site-title">
         Lisa Steven's Portfolio
       </Link>
-      <ul className="flex">
+      <ul>
         <CustomLink to="/projects">Projects</CustomLink>
         <CustomLink to="/about">About</CustomLink>
       </ul>
