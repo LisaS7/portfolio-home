@@ -73,16 +73,32 @@ function SkillGroup({ skills }) {
 
 function Skills() {
   const skills = {
-    Beginner: [
-      { image: "css.svg", name: "CSS" },
-      { image: "html.svg", name: "HTML" },
-      { image: "javascript.svg", name: "JavaScript" },
-      { image: "nodejs.svg", name: "Node.JS" },
-    ],
-    Intermediate: [
+    Languages: [
       { image: "python.svg", name: "Python" },
+      { image: "javascript.svg", name: "JavaScript" },
+    ],
+    Frameworks: [
+      { image: "nodejs.svg", name: "Node.JS" },
       { image: "flask.svg", name: "Flask" },
       { image: "django.svg", name: "Django" },
+    ],
+    Database: [
+      { image: "mongodb.svg", name: "MongoDB" },
+      { image: "sqlite.svg", name: "SQLite" },
+      { image: "postgresql.svg", name: "PostgreSQL" },
+      { image: "sqlalchemy.svg", name: "SQLAlchemy" },
+    ],
+    Frontend: [
+      { image: "html.svg", name: "HTML" },
+      { image: "css.svg", name: "CSS" },
+      { image: "react.svg", name: "React" },
+    ],
+    Other: [
+      { image: "git.svg", name: "Git" },
+      { image: "linux.svg", name: "Linux" },
+      { image: "jira.svg", name: "Jira" },
+      { image: "confluence.svg", name: "Confluence" },
+      { image: "amazonwebservices.svg", name: "AWS" },
     ],
   };
 
