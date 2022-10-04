@@ -7,6 +7,7 @@ cd ~
 if [[ -f ~/nginx.conf ]] ; then 
     sudo mv ~/nginx.conf /etc/nginx/nginx.conf
     sudo systemctl restart nginx
+    sudo systemctl enable nginx.service
     echo "nginx.conf: updated"
 else
     echo "nginx.conf: no updates"
@@ -23,6 +24,7 @@ fi
 # Star wars planets app
 if [[ -f ~/star-wars-planets.service ]] ; then 
     sudo mv ~/star-wars-planets.service /etc/systemd/system
+
     echo "    star-wars-planets: updated"
 else
     echo "    star-wars-planets: no updates"

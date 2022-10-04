@@ -58,7 +58,6 @@ function SkillGroup({ skills }) {
       {skills.map((skill) => {
         return (
           <div className="">
-            <p className="image-text">{skill.name}</p>
             <img
               className="logo"
               src={`./skills/${skill.image}`}
