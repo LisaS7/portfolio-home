@@ -40,7 +40,7 @@ function GitHub({ repo }) {
 function ExternalLink({ appName }) {
   return (
     <a
-      href={`http://52.56.147.199/${appName}`}
+      href={`http://lisasteven.co.uk/${appName}`}
       target="_blank"
       rel="noopener noreferrer"
     >
