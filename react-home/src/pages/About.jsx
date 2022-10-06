@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <h1>Courses</h1>
-      <div className="card-container">
+      <div className="card-container wrap py6">
         <div className="badge-card">
           <CredlyBadge
             image="aws-cloud-practitioner.png"
@@ -32,7 +32,7 @@ export default function About() {
       </div>
       <div>
         <h1>Skills</h1>
-        <div className="card-container skills-container">
+        <div className="card-container skills-container py6 wrap">
           <Skills />
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div className="card-container">
+    <div className="card-container wrap py6">
       <div className="project-card">
         <h3>Star Wars Planets</h3>
         <p>

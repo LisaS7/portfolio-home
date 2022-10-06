@@ -12,6 +12,21 @@
   font-family: "Noto Sans Mono", monospace;
 }
 
+@media only screen and (min-width: 768px) {
+  .w75 {
+    width: 75%;
+  }
+  .py6 {
+    padding: 0 6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrap {
+    flex-wrap: wrap;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -28,10 +43,10 @@ body {
 }
 
 /* HOME */
+
 .home-container {
   flex-direction: column;
   margin: auto;
-  width: 75%;
   text-align: justify;
 }
 
@@ -46,7 +61,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-bottom: 3rem;
-  padding: 0 6rem;
+  padding: 0 2rem;
   gap: 1.5rem 3rem;
 }
 

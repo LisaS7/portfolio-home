@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="card-container home-container">
+    <div className="card-container home-container w75 py6">
       <h1>Hello!</h1>
       <p>
         My name is Lisa. I discovered the magic of programming while working as
