@@ -21,6 +21,7 @@ if [[ -f ~/node_planner.service ]] ; then
 else
     echo "    node_planner: no updates"
 fi
+
 # Star wars planets app
 if [[ -f ~/star-wars-planets.service ]] ; then 
     sudo mv ~/star-wars-planets.service /etc/systemd/system
@@ -28,6 +29,15 @@ if [[ -f ~/star-wars-planets.service ]] ; then
     echo "    star-wars-planets: updated"
 else
     echo "    star-wars-planets: no updates"
+fi
+
+# Yarn store app
+if [[ -f ~/yarn-store.service ]] ; then 
+    sudo mv ~/yarn-store.service /etc/systemd/system
+
+    echo "    yarn-store: updated"
+else
+    echo "    yarn-store: no updates"
 fi
 
 sudo systemctl daemon-reload
@@ -78,7 +88,28 @@ if [[ $answer = y ]] ; then
     cd ~
 fi
 
+# Clone and install yarn store app
+read -p "Update yarn store app? y/n: " answer
+if [[ $answer = y ]] ; then
+    rm -rf ~/yarn_store
+    git clone https://github.com/LisaS7/yarn_store.git
+    echo "Cloned yarn store from github"
+    cd ~/yarn_store
+
+    bash setup.sh
+    export FLASK_APP=~/yarn_store/app.py
+
+
+    # Reload systemctl service
+    sudo systemctl restart yarn-store.service
+    sudo systemctl enable yarn-store.service
+    echo "yarn store service restarted"
+
+    cd ~
+fi
+
 # Checks
 systemctl status node_planner.service
 systemctl status star-wars-planets.service
+systemctl status yarn-store.service
 systemctl status nginx
