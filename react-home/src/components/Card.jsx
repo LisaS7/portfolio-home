@@ -8,10 +8,6 @@ export const CardContainer = styled.div`
   gap: 1.5rem 3rem;
 `;
 
-export const SkillsContainer = styled(CardContainer)`
-  flex-wrap: wrap;
-`;
-
 export const CourseCard = styled.div`
   display: flex;
   gap: 6rem;

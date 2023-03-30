@@ -1,6 +1,7 @@
 import React from "react";
-import { CardContainer, CourseCard, SkillsContainer } from "../components/Card";
+import { CardContainer, CourseCard } from "../components/Card";
 import { CredlyBadge } from "../components/CourseBadge";
+import { SkillsContainer } from "../components/Skills";
 import { Skills } from "../components/Skills";
 
 export default function About() {
@@ -14,7 +15,7 @@ export default function About() {
             id="502c8754-f1ae-48d0-a2d6-f08e0f49152b"
             date="September 2022"
           ></CredlyBadge>
-          <p className="card-text">
+          <p>
             This exam covers foundational knowledge of AWS key services,
             including deployment and operation, security, compliance, and
             architecture principles.
@@ -27,7 +28,7 @@ export default function About() {
             date="May 2021"
           ></CredlyBadge>
 
-          <p className="card-text">
+          <p>
             This course covered the basics of analysing and visualising data
             using Excel, SQL, Python, and IBM's Cognos Analytics.
           </p>

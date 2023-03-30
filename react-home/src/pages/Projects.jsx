@@ -1,10 +1,11 @@
 import React from "react";
 import { CardContainer } from "../components/Card";
+import { GitHub, ExternalLink, ProjectCard } from "../components/Project";
 
 export default function Projects() {
   return (
     <CardContainer className="wrap py6">
-      <div className="project-card">
+      <ProjectCard>
         <h3>Star Wars Planets</h3>
         <p>
           A simple page which lists Star Wars planets. Data is courtesy of the
@@ -12,8 +13,8 @@ export default function Projects() {
         </p>
         <GitHub repo="star-wars-planets" />
         <ExternalLink appName="star-wars-planets" />
-      </div>
-      <div className="project-card">
+      </ProjectCard>
+      <ProjectCard>
         <h3>Weekly Planner</h3>
         <p>
           Plan tasks for the week ahead. This is my first Node.js app and the
@@ -21,31 +22,7 @@ export default function Projects() {
         </p>
         <GitHub repo="node-planner" />
         <ExternalLink appName="planner" />
-      </div>
+      </ProjectCard>
     </CardContainer>
-  );
-}
-
-function GitHub({ repo }) {
-  return (
-    <a
-      href={`https://github.com/LisaS7/${repo}`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img className="logo" src="./github.svg" alt="github link" />
-    </a>
-  );
-}
-
-function ExternalLink({ appName }) {
-  return (
-    <a
-      href={`http://lisasteven.co.uk/${appName}`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img className="logo" src="./external-link.png" alt="view project" />
-    </a>
   );
 }

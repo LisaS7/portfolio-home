@@ -1,5 +1,10 @@
 import styled from "styled-components";
 import skillsJson from "../data/skills.json";
+import { CardContainer } from "./Card";
+
+export const SkillsContainer = styled(CardContainer)`
+  flex-wrap: wrap;
+`;
 
 const StyledSkillGroup = styled.div`
   display: flex;

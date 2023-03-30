@@ -19,7 +19,7 @@ export function CredlyBadge({ image, id, date }) {
       <a href={url}>
         <img src={`./badges/${image}`} alt={`${image}`}></img>
       </a>
-      <p className="image-text">{date}</p>
+      <p>{date}</p>
     </Badge>
   );
 }
