@@ -1,6 +1,11 @@
 import React from "react";
 import { CardContainer } from "../containers/CardContainer";
-import { GitHub, ExternalLink, ProjectCard } from "../components/Project";
+import {
+  GitHub,
+  ExternalLink,
+  InternalLink,
+  ProjectCard,
+} from "../components/Project";
 
 export default function Projects() {
   return (
@@ -13,6 +18,7 @@ export default function Projects() {
           using the framer-motion library.
         </p>
         <GitHub repo="game-group-project" />
+        <InternalLink appName="mind-blank" />
       </ProjectCard>
       <ProjectCard>
         <h3>Star Wars Planets</h3>

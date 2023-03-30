@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ProjectCard = styled.div`
@@ -28,5 +29,13 @@ export function ExternalLink({ appName }) {
     >
       <img className="logo" src="./external-link.png" alt="view project" />
     </a>
+  );
+}
+
+export function InternalLink({ appName }) {
+  return (
+    <Link to={appName}>
+      <img className="logo" src="./external-link.png" alt="view project" />
+    </Link>
   );
 }
