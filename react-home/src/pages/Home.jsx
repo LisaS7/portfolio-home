@@ -1,8 +1,25 @@
 import React from "react";
+import styled from "styled-components";
+
+const Container = styled.main`
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+  gap: 1.5rem 3rem;
+
+  & img {
+    width: 250px;
+    margin: auto;
+  }
+`;
 
 export default function Home() {
   return (
-    <div className="card-container home-container w75 py6">
+    <Container className="w75 py6">
       <h1>Hello!</h1>
       <p>
         My name is Lisa. I discovered the magic of programming while working as
@@ -28,6 +45,6 @@ export default function Home() {
         some time learning basic frontend and backend skills but I definitely
         have the most fun working on backend.
       </p>
-    </div>
+    </Container>
   );
 }

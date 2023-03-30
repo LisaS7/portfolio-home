@@ -91,13 +91,13 @@ fi
 # Clone and install yarn store app
 read -p "Update yarn store app? y/n: " answer
 if [[ $answer = y ]] ; then
-    rm -rf ~/yarn_store
-    git clone https://github.com/LisaS7/yarn_store.git
+    rm -rf ~/deployed-yarn-store
+    git clone git@github.com:LisaS7/deployed-yarn-store.git
     echo "Cloned yarn store from github"
-    cd ~/yarn_store
+    cd ~/deployed-yarn-store
 
-    bash setup.sh
-    export FLASK_APP=~/yarn_store/app.py
+    bash ./config/setup.sh
+    export FLASK_APP=~/deployed-yarn-store/app.py
 
 
     # Reload systemctl service

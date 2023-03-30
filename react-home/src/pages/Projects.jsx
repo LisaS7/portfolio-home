@@ -1,8 +1,9 @@
 import React from "react";
+import { CardContainer } from "../components/Card";
 
 export default function Projects() {
   return (
-    <div className="card-container wrap py6">
+    <CardContainer className="wrap py6">
       <div className="project-card">
         <h3>Star Wars Planets</h3>
         <p>
@@ -21,7 +22,7 @@ export default function Projects() {
         <GitHub repo="node-planner" />
         <ExternalLink appName="planner" />
       </div>
-    </div>
+    </CardContainer>
   );
 }
 
