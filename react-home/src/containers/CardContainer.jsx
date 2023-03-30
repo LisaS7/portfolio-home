@@ -7,16 +7,3 @@ export const CardContainer = styled.div`
   padding: 0 2rem;
   gap: 1.5rem 3rem;
 `;
-
-export const CourseCard = styled.div`
-  display: flex;
-  gap: 6rem;
-  flex-basis: 100%;
-  padding: 0 3rem;
-
-  & p {
-    max-width: 18rem;
-    text-align: left;
-    font-size: 0.75rem;
-  }
-`;

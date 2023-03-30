@@ -1,6 +1,6 @@
 import React from "react";
-import { CardContainer, CourseCard } from "../components/Card";
-import { CredlyBadge } from "../components/CourseBadge";
+import { CardContainer } from "../containers/CardContainer";
+import { CourseCard, CredlyBadge } from "../components/Course";
 import { SkillsContainer } from "../components/Skills";
 import { Skills } from "../components/Skills";
 

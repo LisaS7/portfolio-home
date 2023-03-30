@@ -1,5 +1,5 @@
 import React from "react";
-import { CardContainer } from "../components/Card";
+import { CardContainer } from "../containers/CardContainer";
 import { GitHub, ExternalLink, ProjectCard } from "../components/Project";
 
 export default function Projects() {
