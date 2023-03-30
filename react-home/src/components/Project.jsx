@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const ProjectCard = styled.div`
-  max-width: 20rem;
+  max-width: 26rem;
+  padding: 2rem;
+  border: 1px solid darkslategray;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
 export function GitHub({ repo }) {
