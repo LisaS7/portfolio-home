@@ -19,7 +19,9 @@ export default function Tools() {
   return (
     <>
       <h1>My Tools</h1>
-      <p>Here's a list of my favourite tools to work with.</p>
+      <p style={{ textAlign: "center" }}>
+        Here's a list of my favourite tools to work with.
+      </p>
       <List>
         <h3>Apps</h3>
         <li>VSCode - editor</li>

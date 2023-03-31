@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const CourseCard = styled.div`
   display: flex;
-  gap: 3rem;
-  flex-basis: 100%;
-  padding: 1rem 3rem;
+  gap: 2rem;
+  width: 400px;
+  padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   & > p {
@@ -16,6 +16,8 @@ export const CourseCard = styled.div`
 `;
 
 const Badge = styled.div`
+  padding-top: 1rem;
+
   & img {
     width: 150px;
     height: 150px;
@@ -32,7 +34,18 @@ export function CredlyBadge({ image, id, date }) {
   return (
     <Badge>
       <a href={url}>
-        <img src={`./badges/${image}`} alt={`${image}`}></img>
+        <img src={`./badges/${image}`} alt={`${image}`} />
+      </a>
+      <p>{date}</p>
+    </Badge>
+  );
+}
+
+export function CourseBadge({ image, url, date }) {
+  return (
+    <Badge>
+      <a href={url}>
+        <img src={`./badges/${image}`} alt={`${image}`} />
       </a>
       <p>{date}</p>
     </Badge>

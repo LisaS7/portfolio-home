@@ -2,10 +2,16 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ProjectCard = styled.div`
-  max-width: 26rem;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
   padding: 2rem;
   border: 1px solid darkslategray;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+`;
+
+export const ButtonBox = styled.div`
+  margin-top: auto;
 `;
 
 export function GitHub({ repo }) {

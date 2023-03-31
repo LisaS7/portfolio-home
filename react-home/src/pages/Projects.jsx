@@ -5,6 +5,7 @@ import {
   ExternalLink,
   InternalLink,
   ProjectCard,
+  ButtonBox,
 } from "../components/Project";
 
 export default function Projects() {
@@ -17,8 +18,10 @@ export default function Projects() {
           development course. Built with the MERN stack and animations produced
           using the framer-motion library.
         </p>
-        <GitHub repo="game-group-project" />
-        <InternalLink appName="mind-blank" />
+        <ButtonBox>
+          <GitHub repo="game-group-project" />
+          <InternalLink appName="mind-blank" />
+        </ButtonBox>
       </ProjectCard>
       <ProjectCard>
         <h3>Star Wars Planets</h3>
@@ -27,8 +30,10 @@ export default function Projects() {
           Swapi API. Built with Python/Flask to practice using a REST API and
           hosted on AWS EC2.
         </p>
-        <GitHub repo="star-wars-planets" />
-        <ExternalLink appName="star-wars-planets" />
+        <ButtonBox>
+          <GitHub repo="star-wars-planets" />
+          <ExternalLink appName="star-wars-planets" />
+        </ButtonBox>
       </ProjectCard>
       <ProjectCard>
         <h3>Weekly Planner</h3>
@@ -36,8 +41,10 @@ export default function Projects() {
           Plan tasks for the week ahead for multiple users. This is my first
           Node.js app. Deployed to an AWS EC2 server.
         </p>
-        <GitHub repo="node-planner" />
-        <ExternalLink appName="planner" />
+        <ButtonBox>
+          <GitHub repo="node-planner" />
+          <ExternalLink appName="planner" />
+        </ButtonBox>
       </ProjectCard>
     </CardContainer>
   );
