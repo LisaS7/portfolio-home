@@ -13,6 +13,10 @@ const List = styled.ul`
   & li {
     padding: 1rem;
   }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default function Tools() {

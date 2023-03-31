@@ -23,12 +23,6 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .wrap {
-    flex-wrap: wrap;
-  }
-}
-
 body {
   margin: 0;
   background-color: #e3e8f4;

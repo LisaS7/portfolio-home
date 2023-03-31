@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <h1>Courses</h1>
-      <CardContainer className="wrap py6">
+      <CardContainer className="py6">
         <CourseCard>
           <CourseBadge
             image="codeclan.png"
@@ -47,7 +47,7 @@ export default function About() {
       </CardContainer>
       <div>
         <h1>Skills</h1>
-        <SkillsContainer className="py6 wrap">
+        <SkillsContainer className="py6">
           <Skills />
         </SkillsContainer>
       </div>

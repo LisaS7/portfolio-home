@@ -8,4 +8,9 @@ export const ProjectSection = styled.section`
   border-bottom: 1px solid darkslategray;
   border-top: 1px solid darkslategray;
   text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;

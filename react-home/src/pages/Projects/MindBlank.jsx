@@ -12,6 +12,10 @@ const Textblock = styled.p`
   width: 80%;
   max-width: 50vw;
   text-align: justify;
+
+  @media only screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const ProjectSummary = styled.div`

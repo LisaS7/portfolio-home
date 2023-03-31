@@ -10,7 +10,7 @@ import {
 
 export default function Projects() {
   return (
-    <CardContainer className="wrap py6">
+    <CardContainer className="py6">
       <ProjectCard>
         <h3>Mind Blank</h3>
         <p>

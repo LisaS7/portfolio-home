@@ -7,14 +7,12 @@ const StyledNavbar = styled.nav`
   background-color: var(--background);
   color: var(--text);
   justify-content: space-between;
-  align-items: stretch;
   gap: 2rem;
-  padding: 3rem 8rem;
+  padding: 2rem 8rem;
 
   & ul {
     display: flex;
     list-style: none;
-    gap: 1rem;
     margin: 0;
   }
 
@@ -38,10 +36,28 @@ const StyledNavbar = styled.nav`
   & li:hover {
     background-color: var(--secondary);
   }
+
+  @media only screen and (max-width: 768px) {
+    padding: 1rem 3rem;
+
+    & ul {
+      flex-direction: column;
+    }
+
+    & li {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+      margin: 0;
+    }
+  }
 `;
 
 const StyledTitle = styled(Link)`
-  font-size: 2.5rem;
+  font-size: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export default function Navbar() {
