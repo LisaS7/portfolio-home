@@ -5,6 +5,7 @@
   --text: #daebe8;
   --primary: #87bdd8;
   --secondary: #bccad6;
+  --light-grey: #fbfcfd;
 }
 
 * {
@@ -30,6 +31,7 @@
 
 body {
   margin: 0;
+  background-color: #e3e8f4;
 }
 
 

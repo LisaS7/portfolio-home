@@ -53,6 +53,7 @@ export default function Navbar() {
       <ul>
         <CustomLink to="/projects">Projects</CustomLink>
         <CustomLink to="/about">About</CustomLink>
+        <CustomLink to="/tools">Tools</CustomLink>
       </ul>
     </StyledNavbar>
   );
