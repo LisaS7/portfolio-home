@@ -56,6 +56,14 @@ export default function Tools() {
           I'll never go back. So much less strain on my wrist!
         </li>
       </List>
+      <List>
+        <h3>Other</h3>
+        <li>
+          RocketBook - a wipe clean notebook with an accompanying app to scan
+          and send notes straight to my Google Drive. Perfect for diagrams and
+          planning.
+        </li>
+      </List>
     </>
   );
 }

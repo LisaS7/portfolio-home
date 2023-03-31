@@ -6,8 +6,9 @@ export const PageContainer = styled.main`
   margin: 0 auto;
   padding: 4rem;
   background-color: var(--light-grey);
-`;
 
-export const NarrowPageContainer = styled(PageContainer)`
-  width: 40%;
+  & h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
 `;
