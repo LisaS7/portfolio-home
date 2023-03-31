@@ -1,6 +1,7 @@
 import YouTube from "react-youtube";
 import styled from "styled-components";
 import { ProjectContainer } from "../../containers/ProjectContainer";
+import { PageContainer } from "../../containers/PageContainer";
 
 const Image = styled.img`
   margin: 4rem 0;
@@ -8,7 +9,7 @@ const Image = styled.img`
 `;
 
 const Textblock = styled.p`
-  margin: auto;
+  margin: 0 auto;
   width: 80%;
   max-width: 50vw;
   text-align: justify;
@@ -25,9 +26,9 @@ const Row = styled.div`
 
 export default function MindBlank() {
   return (
-    <>
+    <PageContainer>
       <h1>Mind Blank</h1>
-      <ProjectContainer>
+      <ProjectContainer style={{ gridTemplateColumns: "1fr 2fr" }}>
         <YouTube videoId="hahfdp1couo" />
         <ProjectSummary>
           <p>Project Type: Group (4 developers)</p>
@@ -40,13 +41,15 @@ export default function MindBlank() {
           </p>
         </ProjectSummary>
       </ProjectContainer>
-      <Textblock>
-        We planned the app with wireframes, a components diagram, and user
-        stories. Our planning session was short and efficient and we all came
-        away with a clear idea of what we wanted to create.
-      </Textblock>
+
+      <ProjectContainer>
+        <Textblock>
+          We planned the app with wireframes, a components diagram, and user
+          stories. Our planning session was short and efficient and we all left
+          with a clear idea of what we wanted to create.
+        </Textblock>
+      </ProjectContainer>
       <Image src="../mind-blank/planning.png" alt="project user stories" />
-      <ProjectContainer></ProjectContainer>
-    </>
+    </PageContainer>
   );
 }

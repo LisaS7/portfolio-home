@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-export const ProjectContainer = styled.main`
-  margin: 4rem auto;
+export const ProjectContainer = styled.section`
+  margin: 0 auto;
+  padding: 3rem 0;
   display: grid;
-  grid-template-columns: 49vw 49vw;
   gap: 2vh 2vw;
+  border-bottom: 1px solid darkslategray;
 `;

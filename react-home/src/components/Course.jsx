@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 export const CourseCard = styled.div`
   display: flex;
-  gap: 6rem;
+  gap: 3rem;
   flex-basis: 100%;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-  & p {
+  & > p {
+    margin: 3rem auto;
     max-width: 18rem;
     text-align: left;
     font-size: 0.75rem;

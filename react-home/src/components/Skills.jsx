@@ -8,6 +8,8 @@ export const SkillsContainer = styled(CardContainer)`
 
 const StyledSkillGroup = styled.div`
   display: flex;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
 export function SkillGroup({ skills }) {

@@ -3,10 +3,11 @@ import { CardContainer } from "../containers/CardContainer";
 import { CourseCard, CredlyBadge } from "../components/Course";
 import { SkillsContainer } from "../components/Skills";
 import { Skills } from "../components/Skills";
+import { PageContainer } from "../containers/PageContainer";
 
 export default function About() {
   return (
-    <>
+    <PageContainer>
       <h1>Courses</h1>
       <CardContainer className="wrap py6">
         <CourseCard>
@@ -40,6 +41,6 @@ export default function About() {
           <Skills />
         </SkillsContainer>
       </div>
-    </>
+    </PageContainer>
   );
 }
