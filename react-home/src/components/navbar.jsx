@@ -75,6 +75,7 @@ export default function Navbar() {
   );
 }
 
+// Custom link allows for highlighting the navbar item for the currently selected page
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });

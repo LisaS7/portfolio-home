@@ -27,7 +27,7 @@ export default function Projects() {
         <h3>Rock, Paper, Scissors</h3>
         <p>
           A game of Rock, Paper, Scissors played against the computer. Made as
-          part of The Odin Project.
+          part of The Odin Project using HTML/CSS and vanilla JavaScript.
         </p>
         <ButtonBox>
           <GitHub repo="RockPaperScissors" />
