@@ -24,7 +24,7 @@ export default function Tools() {
     <>
       <h1>My Tools</h1>
       <p style={{ textAlign: "center" }}>
-        Here's a list of my favourite tools to work with.
+        Here's a list of the tools I most frequently work with.
       </p>
       <List>
         <h3>Apps</h3>
@@ -41,8 +41,8 @@ export default function Tools() {
         <h3>Desktop</h3>
         <li>
           Mac Mini Core i7 2018, 32GB RAM, 128GB SSD - this was a bargain,
-          bought refurbished in late 2021 for only £650. A great wee computer
-          and{" "}
+          bought refurbished in late 2021 for only £650. A great wee computer, I
+          love it.
         </li>
         <li>
           HP 23.8" Quad-HD Monitor - the perfect screen size for me and has a
