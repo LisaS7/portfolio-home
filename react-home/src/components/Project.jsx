@@ -26,17 +26,9 @@ export function GitHub({ repo }) {
   );
 }
 
-export function ExternalLink({ url }) {
+export function ProjectLink({ url }) {
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      <img className="logo" src="./external-link.png" alt="view project" />
-    </a>
-  );
-}
-
-export function InternalLink({ appName }) {
-  return (
-    <Link to={appName}>
+    <Link to={url} target="_blank" rel="noopener noreferrer">
       <img className="logo" src="./external-link.png" alt="view project" />
     </Link>
   );

@@ -2,8 +2,7 @@ import React from "react";
 import { CardContainer } from "../containers/CardContainer";
 import {
   GitHub,
-  ExternalLink,
-  InternalLink,
+  ProjectLink,
   ProjectCard,
   ButtonBox,
 } from "../components/Project";
@@ -20,7 +19,7 @@ export default function Projects() {
         </p>
         <ButtonBox>
           <GitHub repo="mind-blank" />
-          <InternalLink appName="mind-blank" />
+          <ProjectLink url="mind-blank" />
         </ButtonBox>
       </ProjectCard>
       <ProjectCard>
@@ -31,7 +30,7 @@ export default function Projects() {
         </p>
         <ButtonBox>
           <GitHub repo="RockPaperScissors" />
-          <ExternalLink url="https://lisas7.github.io/RockPaperScissors/" />
+          <ProjectLink url="https://lisas7.github.io/RockPaperScissors/" />
         </ButtonBox>
       </ProjectCard>
       <ProjectCard>
@@ -43,7 +42,7 @@ export default function Projects() {
         </p>
         <ButtonBox>
           <GitHub repo="star-wars-planets" />
-          <InternalLink appName="star-wars-planets" />
+          <ProjectLink url="http://lisasteven.co.uk/star-wars-planets" />
         </ButtonBox>
       </ProjectCard>
       <ProjectCard>
@@ -54,7 +53,7 @@ export default function Projects() {
         </p>
         <ButtonBox>
           <GitHub repo="node-planner" />
-          <InternalLink appName="planner" />
+          <ProjectLink url="http://lisasteven.co.uk/planner" />
         </ButtonBox>
       </ProjectCard>
     </CardContainer>
