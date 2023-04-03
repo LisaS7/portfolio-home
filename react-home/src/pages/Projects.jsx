@@ -19,8 +19,19 @@ export default function Projects() {
           using the framer-motion library.
         </p>
         <ButtonBox>
-          <GitHub repo="game-group-project" />
+          <GitHub repo="mind-blank" />
           <InternalLink appName="mind-blank" />
+        </ButtonBox>
+      </ProjectCard>
+      <ProjectCard>
+        <h3>Rock, Paper, Scissors</h3>
+        <p>
+          A game of Rock, Paper, Scissors played against the computer. Made as
+          part of The Odin Project.
+        </p>
+        <ButtonBox>
+          <GitHub repo="RockPaperScissors" />
+          <ExternalLink url="https://lisas7.github.io/RockPaperScissors/" />
         </ButtonBox>
       </ProjectCard>
       <ProjectCard>
@@ -32,7 +43,7 @@ export default function Projects() {
         </p>
         <ButtonBox>
           <GitHub repo="star-wars-planets" />
-          <ExternalLink appName="star-wars-planets" />
+          <InternalLink appName="star-wars-planets" />
         </ButtonBox>
       </ProjectCard>
       <ProjectCard>
@@ -43,7 +54,7 @@ export default function Projects() {
         </p>
         <ButtonBox>
           <GitHub repo="node-planner" />
-          <ExternalLink appName="planner" />
+          <InternalLink appName="planner" />
         </ButtonBox>
       </ProjectCard>
     </CardContainer>

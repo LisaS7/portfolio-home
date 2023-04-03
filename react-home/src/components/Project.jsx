@@ -26,13 +26,9 @@ export function GitHub({ repo }) {
   );
 }
 
-export function ExternalLink({ appName }) {
+export function ExternalLink({ url }) {
   return (
-    <a
-      href={`http://lisasteven.co.uk/${appName}`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href={url} target="_blank" rel="noopener noreferrer">
       <img className="logo" src="./external-link.png" alt="view project" />
     </a>
   );
